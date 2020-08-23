@@ -1,0 +1,130 @@
+.gbt_portfolio_block_wrapper
+{
+	&.alignfull
+	{
+		@media all and (min-width: 640px) {
+			padding: 0 25px;
+		}
+	}
+}
+
+.gbt_portfolio_wrapper
+{
+	.portfolio_categories
+	{
+		margin: 0;
+		padding: 0 25px;
+		list-style: none;
+		text-align: center;
+
+		li
+		{
+			display: inline-block;
+			margin: 0 4px 10px 4px;
+			padding: 5px 10px;
+			border: 1px solid;
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 12px;
+			cursor: pointer;
+			transition: 0.3s;
+
+			&:hover
+			{
+				color: #fff;
+			}
+		}
+	}
+
+	.portfolio_container
+	{
+		display: grid;
+		grid-gap: 2.5rem 25px;
+
+		&.portfolio_columns_2
+		{
+			grid-template-columns: calc( 50% - 12.5px ) calc( 50% - 12.5px );
+
+			@media all and (max-width: 639px) {
+				grid-template-columns: 100%;
+			}
+		}
+
+		&.portfolio_columns_3
+		{
+			grid-template-columns: calc( 33.3333% - 16.6666px ) calc( 33.3333% - 16.6666px ) calc( 33.3333% - 16.6666px );
+
+			@media all and (max-width: 639px) {
+				grid-template-columns: 100%;
+			}
+		}
+
+		&.portfolio_columns_4
+		{
+			grid-template-columns: calc( 25% - 18.75px ) calc( 25% - 18.75px ) calc( 25% - 18.75px ) calc( 25% - 18.75px );
+
+			@media all and (min-width: 640px) and (max-width: 1023px) {
+				grid-template-columns: calc( 33.3333% - 16.6666px ) calc( 33.3333% - 16.6666px ) calc( 33.3333% - 16.6666px );
+			}
+
+			@media all and (max-width: 639px) {
+				grid-template-columns: 100%;
+			}
+		}
+	}
+
+	.portfolio_item
+	{
+		text-align: center;
+
+		.portfolio_item_img_container
+		{
+			background-size: cover;
+			background-position: center;
+			padding-bottom: 75%;
+			margin-bottom: 15px;
+		}
+
+		.portfolio_title
+		{
+			margin-bottom: 15px;
+			transition: all .3s ease;
+		}
+
+		.portfolio_sep
+		{
+			width: 25%;
+			height: 2px;
+			margin: 0 auto 15px;
+		}
+
+		.portfolio_item_cat
+		{
+			text-transform: capitalize;
+		}
+	}
+}
+
+.portfolio_details_item_cat
+{
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+
+	a
+	{
+		padding: 0 10px;
+		display: inline-block;
+
+		&:first-child
+		{
+			padding-left: 0;
+		}
+
+		&:last-child
+		{
+			padding-right: 0;
+		}
+	}
+}

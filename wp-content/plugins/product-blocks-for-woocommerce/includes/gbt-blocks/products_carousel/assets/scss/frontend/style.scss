@@ -1,0 +1,139 @@
+.wp-block-getbowtied-carousel {
+	padding: 0;
+
+	.gbt_18_swiper-container {
+		cursor: grab;
+		opacity: 0;
+		overflow: hidden;
+		visibility: hidden;
+		transition: opacity 1s ease-in-out;
+
+		&.loaded {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.swiper-navigation-container {
+		margin: 0 -50px;
+		position: relative;
+		overflow: hidden;
+
+		&:hover {
+			.swiper-button-prev {
+				transform: translateX(70px);
+			}
+
+			.swiper-button-next {
+				transform: translateX(-70px);
+			}
+		}
+	}
+
+	.gbt_18_swiper-container {
+		margin: 0 50px 50px;
+	}
+
+	.swiper-wrapper {
+		padding-bottom: 20px;
+
+		.swiper-slide {
+			ul {
+				margin: 0;
+				padding: 0;
+
+				&.products {
+					width: 100%;
+
+					li {
+						opacity: 1;
+						display: block;
+						transform: none;
+						margin: 0;
+						padding: 0;
+						width: 100%;
+
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		background: none;
+		transition: all 0.35s ease-in-out;
+		display: none;
+
+		&:before {
+			/* use !important to prevent issues with browser extensions that change fonts */
+			font-family: 'product-blocks' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		@media screen and (min-width: 769px) {
+			display: block;
+		}
+	}
+
+	.swiper-button-prev {
+		left: -50px;
+		text-align: left;
+	}
+
+	.swiper-button-next {
+		right: -50px;
+		text-align: right;
+	}
+
+	&.alignfull {
+		.swiper-navigation-container {
+			margin: 0;
+
+			.gbt_18_swiper-container {
+				margin: 0 0 50px;
+			}
+		}
+	}
+
+	.swiper-button-prev:before {
+		content: '\e900';
+		color: #000;
+	}
+
+	.swiper-button-next:before {
+		content: '\e901';
+		color: #000;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #000;
+	}
+
+	.swiper-pagination-bullet {
+		background: transparent;
+		border: solid 1px #000;
+		opacity: 1;
+		// transform: none;
+		&.swiper-pagination-bullet-active {
+			border: none;
+			background: #000;
+		}
+	}
+
+	.swiper-container-horizontal > .swiper-pagination-bullets {
+		bottom: 0;
+		position: relative;
+		margin-top: 50px;
+	}
+}

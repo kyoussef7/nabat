@@ -1,0 +1,57 @@
+
+---Downloaded files---
+The import files for: Default were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/nabat
+Data file = C:\wamp64\www\nabat/wp-content/themes/theretailer/inc/demo/theretailer.wordpress.xml
+Widget file = C:\wamp64\www\nabat/wp-content/themes/theretailer/inc/demo/theretailer.widgets.wie
+Customizer file = C:\wamp64\www\nabat/wp-content/themes/theretailer/inc/demo/theretailer.customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Products by Rating - Top rated products - Imported
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+Products - New In Store - Imported
+Products - Our Picks - Imported
+Products - Featured Products - Imported
+The Retailer Recent Posts - Recent Posts - Imported
+Product Tag Cloud - Product tags - Imported
+Social Media Profiles - Social Media Profiles - Imported
+
+Product listing : 
+
+Filter Products by Price - Filter by Price - Imported
+Product Categories - Product Categories - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+
